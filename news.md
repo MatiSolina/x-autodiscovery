@@ -1,7 +1,62 @@
-<!-- state:{"last_tweet_id":"0"} -->
+<!-- state:{"last_tweet_id":"2072311906086551680"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-06-30 — Vercel Services
+**What it is:** Run multiple frameworks (a Next.js frontend plus Python/Go/Rust/Node backends) in a single Vercel project, declared under a `services` key in vercel.json, with atomic deploy/rollback, shared preview URLs, and private service-to-service bindings that never touch the public internet.
+**Why you'd use it:** Keep your full stack in sync on one domain and one deploy instead of stitching separate clouds; backends auto-scale on Fluid compute with Active CPU pricing and are reachable internally via injected URLs.
+**Docs:** https://vercel.com/blog/vercel-services-run-full-stack-on-vercel
+**Announcement:** https://x.com/vercel/status/2071951670058324353
+
+## 2026-06-30 — Run any Dockerfile on Vercel
+**What it is:** Add a `Dockerfile.vercel` and Vercel builds, stores, deploys, and autoscales any HTTP server (Go, Rails, Spring Boot, Express, Laravel, ASP.NET, FastAPI, nginx) on Fluid compute with Active CPU pricing; the server just needs to listen on `$PORT`.
+**Why you'd use it:** Ship an existing containerized backend with one `vercel deploy`, getting a preview URL per push, shared observability, and a first-class container running beside your frontend on the same platform.
+**Docs:** https://vercel.com/blog/dockerfile-on-vercel
+**Announcement:** https://x.com/vercel/status/2071951027302224262
+
+## 2026-06-29 — Realtime voice, speech, and transcription on AI Gateway
+**What it is:** AI Gateway now routes audio alongside text/image/video — realtime two-way voice, text-to-speech, and speech-to-text behind one API key with the same provider routing, observability, spend controls, and BYOK; available in beta in AI SDK 7 via `useRealtime`, `generateSpeech`, and `transcribe`, with models from OpenAI and xAI.
+**Why you'd use it:** Build low-latency voice agents and audio features without a separate STT→LLM→TTS pipeline, new keys, or new billing.
+**Docs:** https://vercel.com/blog/realtime-voice-agents-on-ai-gateway
+**Announcement:** https://x.com/vercel/status/2071620375621009416
+
+## 2026-06-25 — AI SDK 7
+**What it is:** A major release of the TypeScript AI SDK focused on production agents, adding tool approvals, durable `WorkflowAgent` execution, first-class timeouts, sandbox support, `HarnessAgent` for plugging in runtimes like Claude Code/Codex/Pi, redesigned global telemetry, lifecycle events, and experimental realtime voice and video generation.
+**Why you'd use it:** Build, run, and observe long-running agents that survive deploys and approvals, with one interface across every provider and OpenTelemetry observability out of the box.
+**Docs:** https://vercel.com/blog/ai-sdk-7
+**Announcement:** https://x.com/vercel/status/2070155382488764566
+
+## 2026-06-22 — Vercel Flags
+**What it is:** Platform-native feature flags evaluated server-side by default with zero page-performance impact, managed in the same dashboard as your deployments and read in code through the open-source Flags SDK (Next.js/SvelteKit adapters, OpenFeature provider otherwise); includes automatic flag registration, a Precompute CDN pattern, Flags Explorer overrides, and a `vercel flags` CLI.
+**Why you'd use it:** Decouple deploying code from releasing features — merge continuously, target segments, run progressive rollouts, and kill a broken feature by toggling a flag without redeploying.
+**Docs:** https://vercel.com/blog/vercel-flags-platform-native-feature-flags
+**Announcement:** https://x.com/vercel/status/2069178278188085683
+
+## 2026-06-17 — Vercel for Enterprise Apps and Agents
+**What it is:** A platform tier for shipping internal apps and agents behind your identity and security boundaries, bundling Vercel Passport (IdP-gated deployments via Okta/Entra/Auth0/OIDC), Vercel Connect (short-lived scoped credentials), Enterprise Managed Users (SAML SSO + Directory Sync lifecycle control), and bring-your-own-cloud on AWS; v0 also connects to Snowflake for governed data apps.
+**Why you'd use it:** Let anyone in the company prototype and ship agents safely with access, audit trails, and credential scoping enforced by the platform rather than per-project configuration.
+**Docs:** https://vercel.com/blog/vercel-for-enterprise-apps-and-agents
+**Announcement:** https://x.com/vercel/status/2067186099508965610
+
+## 2026-06-17 — eve (agent framework)
+**What it is:** An open-source agent framework where an agent is a directory (`agent.ts`, `instructions.md`, `tools/`, `skills/`, `subagents/`, `channels/`, `schedules/`) with durable execution, sandboxed compute, human-in-the-loop approvals, subagents, tracing, and evals built in; ships with an `eve dev` terminal UI and channels for Slack, Discord, Teams, Telegram, Twilio, GitHub, and Linear.
+**Why you'd use it:** Define what an agent does in files instead of assembling production plumbing — it runs on the Agent Stack (AI SDK, AI Gateway, Workflow SDK, Sandbox, Vercel Connect) and deploys on Vercel.
+**Docs:** https://vercel.com/blog/introducing-eve
+**Announcement:** https://x.com/vercel/status/2067180054979936413
+
+## 2026-06-17 — Vercel Connect
+**What it is:** Runtime credential exchange (Public Beta) that replaces stored long-lived provider tokens: register a connector once for Slack, GitHub, Linear, Discord, Notion, Salesforce, Figma, Snowflake, or any OAuth/API service, then request short-lived, per-task-scoped tokens at runtime via `getToken` from `@vercel/connect` using the deployment's OIDC identity; includes per-user scoping, per-environment isolation, revocation, and verified webhook trigger forwarding.
+**Why you'd use it:** Give agents access to external systems with least-privilege tokens that expire per task and no provider secret sitting in your environment to leak or rotate.
+**Docs:** https://vercel.com/blog/introducing-vercel-connect
+**Announcement:** https://x.com/vercel/status/2067178169006973270
+
+## 2026-06-17 — The Agent Stack
+**What it is:** Vercel's bundled set of building blocks for production agents — AI SDK and AI Gateway (connect to/route models), Workflow SDK and Vercel Sandbox (durable, isolated execution), and Vercel Connect and Chat SDK (secure data/tool access and multi-channel delivery) — with eve as the opinionated framework that assembles them.
+**Why you'd use it:** Get every capability an agent needs (streaming, models, durability, isolation, channels, integrations) from one stack instead of stitching vendors together or building abstractions yourself.
+**Docs:** https://vercel.com/blog/agent-stack
+**Announcement:** https://x.com/vercel/status/2067176489641275824
+
 
 ## 2026-07-03 — Agent Runs in the Vercel MCP and CLI
 **What it is:** Inspect Agent Runs from eve agents via new Vercel MCP tools and `vercel agent-runs` CLI commands — list runs and retrieve full traces including reasoning, tool calls, and token usage.
