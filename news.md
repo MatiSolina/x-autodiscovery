@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2074522635908853978"} -->
+<!-- state:{"last_tweet_id":"2075613815560094203"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-07-10 — Deploy Lovable (TanStack Start) apps to Vercel with zero configuration
+**What it is:** Vercel now detects and deploys Lovable applications — which run TanStack Start under the hood via Nitro — with zero configuration. Sync a Lovable project to GitHub, import the repo into Vercel, and the framework is auto-detected with no manual build config required.
+**Why you'd use it:** Ship Lovable-generated apps to Vercel's managed runtime and edge network without hand-editing build settings; each change made in Lovable syncs to GitHub and triggers a fresh deployment automatically.
+**Docs:** https://vercel.com/changelog/you-can-now-deploy-lovable-apps-to-vercel
+**Announcement:** https://x.com/vercel/status/2075613815560094203
+
 
 ## 2026-07-03 — Agent Runs in the Vercel MCP and CLI
 **What it is:** Inspect Agent Runs from eve agents via new Vercel MCP tools and `vercel agent-runs` CLI commands — list runs and retrieve full traces including reasoning, tool calls, and token usage.
