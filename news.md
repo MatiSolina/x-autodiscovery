@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2076712644539543821"} -->
+<!-- state:{"last_tweet_id":"2077166780322299967"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-07-14 — Open Data and Shareable Charts for AI Gateway Leaderboards
+**What it is:** The data behind the AI Gateway leaderboards — ranking models, labs, apps, and providers by requests, token volume, spend, and images/videos generated — is now open under CC BY 4.0. You can export any chart view as CSV, query the same data through the `leaderboard-export` API endpoint, and render any chart as a shareable PNG image.
+**Why you'd use it:** Pull real production AI usage trends into your own dashboards, analysis, or reports; the endpoint is cached for 24 hours and supports filtering by dataset and modality (text, image, video). Export charts as PNG in landscape, square, or portrait with the legend, title, and AI Gateway branding for easy sharing.
+**Docs:** https://vercel.com/changelog/open-data-and-shareable-charts-for-ai-gateway-leaderboards
+**Announcement:** https://x.com/vercel/status/2077166780322299967
+
 
 ## 2026-07-10 — Deploy Lovable (TanStack Start) apps to Vercel with zero configuration
 **What it is:** Vercel now detects and deploys Lovable applications — which run TanStack Start under the hood via Nitro — with zero configuration. Sync a Lovable project to GitHub, import the repo into Vercel, and the framework is auto-detected with no manual build config required.
