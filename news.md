@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2081846100173177313"} -->
+<!-- state:{"last_tweet_id":"2083193506940829949"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-07-31 — Vercel Passport (GA)
+**What it is:** Vercel Passport is now generally available for Enterprise customers, protecting deployments with your own identity provider (Okta, Microsoft Entra ID, or any OIDC provider). Visitors authenticate through the IdP before reaching a protected deployment, and Vercel injects a signed, verified identity token readable in app code via `getIdentity()` from `@vercel/passport`.
+**Why you'd use it:** Add authenticated access to production, preview, and custom environments without writing auth middleware; gate routes using provider group claims; and forward the verified token as a bearer to downstream services (verifiable with `verifyIdentity()` or standard JWT/JWKS). Protection Bypass for Automation and Trusted Sources keep webhooks, cron, and CI traffic working.
+**Docs:** https://vercel.com/changelog/vercel-passport-generally-available
+**Announcement:** https://x.com/vercel/status/2083193506940829949
+
 
 ## 2026-07-14 — Open Data and Shareable Charts for AI Gateway Leaderboards
 **What it is:** The data behind the AI Gateway leaderboards — ranking models, labs, apps, and providers by requests, token volume, spend, and images/videos generated — is now open under CC BY 4.0. You can export any chart view as CSV, query the same data through the `leaderboard-export` API endpoint, and render any chart as a shareable PNG image.
