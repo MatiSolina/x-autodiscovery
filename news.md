@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2084773602709365237"} -->
+<!-- state:{"last_tweet_id":"2085018523072610770"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-08-05 — Next.js 16.3 support on Vercel
+**What it is:** Full Vercel platform support for Next.js 16.3, which ships leaner prefetching, immutable static assets (enabled by default, served under `/_next/static/immutable/*`), and instant navigations. Vercel added platform-side caching and routing improvements plus new observability surfaces to back these features.
+**Why you'd use it:** Upgrading from 16.2 cuts prefetch requests ~45% (over 70% for some apps), reduces static-content CDN requests 17% and bytes 24%, speeds up redeploys ~30% (unchanged assets skip re-upload), and delivers ~2x faster p99 route resolution for large sites. You can now query prefetch requests in Vercel Observability/Runtime Logs, see ISR revalidation reasons and utilization, and use a new Partial Prerendering (PPR) observability page to verify static shells and catch routes that regressed to fully dynamic.
+**Docs:** https://vercel.com/blog/vercel-supports-next-js-16-3
+**Announcement:** https://x.com/vercel/status/2085018523072610770
+
 
 ## 2026-07-31 — Vercel Passport (GA)
 **What it is:** Vercel Passport is now generally available for Enterprise customers, protecting deployments with your own identity provider (Okta, Microsoft Entra ID, or any OIDC provider). Visitors authenticate through the IdP before reaching a protected deployment, and Vercel injects a signed, verified identity token readable in app code via `getIdentity()` from `@vercel/passport`.
