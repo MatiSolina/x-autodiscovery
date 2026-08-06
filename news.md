@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2085018523072610770"} -->
+<!-- state:{"last_tweet_id":"2085398393179005223"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-08-06 — Agent Plugins
+**What it is:** Agent Plugins 1.0.0 is an open, vendor-neutral standard for packaging Agent Skills and MCP servers into distributable plugins. A plugin is a directory with a `plugin.json` manifest and fixed locations for its components (`skills/` for Agent Skills, `mcp.json` for MCP servers), so the same extension can be discovered and loaded by any compatible agent client.
+**Why you'd use it:** If you build agent extensions, you can package a Skill or MCP server once behind one portable manifest and have it carry across supporting clients (ChatGPT, Codex, Cursor, GitHub Copilot, Kiro, VS Code) instead of repackaging per client. If you build an agent client, the spec's conformance checklist defines the minimum requirements for discovering and loading plugins.
+**Docs:** https://vercel.com/blog/introducing-agent-plugins
+**Announcement:** https://x.com/vercel/status/2085398393179005223
+
 
 ## 2026-08-05 — Next.js 16.3 support on Vercel
 **What it is:** Full Vercel platform support for Next.js 16.3, which ships leaner prefetching, immutable static assets (enabled by default, served under `/_next/static/immutable/*`), and instant navigations. Vercel added platform-side caching and routing improvements plus new observability surfaces to back these features.
