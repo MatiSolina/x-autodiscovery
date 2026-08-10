@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2085398393179005223"} -->
+<!-- state:{"last_tweet_id":"2086940594283450486"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-08-10 — Sandbox Egress Firewall free on every plan
+**What it is:** Vercel Sandbox's full egress firewall is now available at no cost on every plan. It controls outbound traffic with deny-by-default domain and CIDR policies, inspects the TLS SNI to enforce domain rules without decrypting traffic, injects credentials at the host network boundary so secrets never enter the microVM, and can forward selected requests through a custom proxy using a Vercel-issued OIDC token.
+**Why you'd use it:** To run untrusted or AI-generated code safely with explicit, least-privilege network authority — grant only the destinations a workload needs, call authenticated APIs without exposing transferable bearer credentials to sandboxed code, and enforce your own authorization/business rules via a programmable proxy layer that lives outside the sandbox.
+**Docs:** https://vercel.com/blog/a-sandbox-without-a-network-boundary-is-only-half-a-sandbox
+**Announcement:** https://x.com/vercel/status/2086940594283450486
+
 
 ## 2026-08-06 — Agent Plugins
 **What it is:** Agent Plugins 1.0.0 is an open, vendor-neutral standard for packaging Agent Skills and MCP servers into distributable plugins. A plugin is a directory with a `plugin.json` manifest and fixed locations for its components (`skills/` for Agent Skills, `mcp.json` for MCP servers), so the same extension can be discovered and loaded by any compatible agent client.
