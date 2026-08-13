@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2087573868877946948"} -->
+<!-- state:{"last_tweet_id":"2088018757189009515"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-08-13 — One-command coding agent setup for AI Gateway
+**What it is:** The `vercel ai-gateway coding-agents setup` CLI command detects the coding agents installed on your machine, provisions or reuses an AI Gateway API key, and writes the gateway URL and credentials into each agent's native config format — no manual editing. It supports Claude Code, Codex, OpenCode, Pi, Cline, Cursor, Hermes, Kilo Code, and OpenClaw.
+**Why you'd use it:** Route every coding agent through one gateway to use 200+ models (including ones an agent has no native support for) with automatic provider fallbacks, a single dashboard for spend, tokens and performance, key budgets and expiry, and team-wide policy (Zero Data Retention, provider allowlists) enforced on every request. Setup never pins a model, so you keep choosing per agent.
+**Docs:** https://vercel.com/docs/ai-gateway/coding-agents
+**Announcement:** https://x.com/vercel/status/2088018757189009515
+
 
 ## 2026-08-10 — Sandbox Egress Firewall free on every plan
 **What it is:** Vercel Sandbox's full egress firewall is now available at no cost on every plan. It controls outbound traffic with deny-by-default domain and CIDR policies, inspects the TLS SNI to enforce domain rules without decrypting traffic, injects credentials at the host network boundary so secrets never enter the microVM, and can forward selected requests through a custom proxy using a Vercel-issued OIDC token.
