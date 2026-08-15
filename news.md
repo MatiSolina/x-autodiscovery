@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"0"} -->
+<!-- state:{"last_tweet_id":"2088018757189009515"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-06-30 — Rebuilding Hydrogen with Shopify
+**What it is:** Vercel and Shopify are rebuilding Hydrogen (open source, runtime-agnostic, runs anywhere JavaScript does) across three layers: a shared core (e.g. `formatMoney` for the Shopify `MoneyV2` type), a client layer (cart state as one import, React available today on the preview branch), and a server layer (type-safe storefront client + Cache Components guidance, templates, and Agent Skills). A Next.js developer preview is available.
+**Why you'd use it:** Build headless Shopify storefronts with Next.js/Nuxt/SvelteKit/custom frameworks using centralized, maintained commerce primitives instead of re-rolling cart and API glue yourself.
+**Docs:** https://vercel.com/blog/vercel-and-shopify-are-rebuilding-hydrogen
+**Announcement:** https://x.com/vercel/status/2072041488012439803
+
 
 ## 2026-08-13 — One-command coding agent setup for AI Gateway
 **What it is:** The `vercel ai-gateway coding-agents setup` CLI command detects the coding agents installed on your machine, provisions or reuses an AI Gateway API key, and writes the gateway URL and credentials into each agent's native config format — no manual editing. It supports Claude Code, Codex, OpenCode, Pi, Cline, Cursor, Hermes, Kilo Code, and OpenClaw.
