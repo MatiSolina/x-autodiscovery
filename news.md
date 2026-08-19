@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2089744789982069006"} -->
+<!-- state:{"last_tweet_id":"2090172360410406988"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-08-19 — Vercel for Slack
+**What it is:** Vercel Agent now works inside Slack. Mention @Vercel in any channel, thread, or DM and it reads the conversation, answers with the full production context of your apps (deployments, logs, metrics, PRs), and turns team decisions into changes you approve. It can diagnose incidents, review PRs, create PRs, roll back deploys, update configs, and manage feature flags. Available today in Public Beta for Pro and Enterprise teams.
+**Why you'd use it:** Keep incident triage, code review, and operational changes in the threads where your team already works instead of context-switching to other tools. The agent is read-only by default and any code or config change goes through an explicit plan card your team must approve before it runs.
+**Docs:** https://vercel.com/blog/introducing-vercel-for-slack
+**Announcement:** https://x.com/vercel/status/2090172360410406988
+
 
 ## 2026-06-30 — Rebuilding Hydrogen with Shopify
 **What it is:** Vercel and Shopify are rebuilding Hydrogen (open source, runtime-agnostic, runs anywhere JavaScript does) across three layers: a shared core (e.g. `formatMoney` for the Shopify `MoneyV2` type), a client layer (cart state as one import, React available today on the preview branch), and a server layer (type-safe storefront client + Cache Components guidance, templates, and Agent Skills). A Next.js developer preview is available.
