@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2090172360410406988"} -->
+<!-- state:{"last_tweet_id":"2092295314988568985"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-08-25 — Vercel Connect (GA)
+**What it is:** A platform capability that lets your apps and agents request short-lived, scoped access tokens to 100+ services (Slack, GitHub, Linear, Salesforce, Notion, Shopify, Snowflake, plus custom OAuth and any OAuth-capable MCP server) at runtime, instead of storing long-lived provider secrets. Code calls `getToken()` from `@vercel/connect`, authenticated via the deployment's built-in OIDC identity; tokens are scoped per request, refresh automatically, and can be revoked with one command. GA adds fine-grained RBAC over connector management, audit logs, and token/trigger observability. Triggers also forward verified inbound events from providers into your project, even with Deployment Protection enabled.
+**Why you'd use it:** It removes a whole class of secret-leak risk — your environment holds no provider credentials, so nothing lingers to be found by an attacker, and a leaked credential is scoped and short-lived by construction. You also get per-request identity (act as the app or a named user), per-environment connectors, and audit-trail answers when an auditor asks who had access to a system and when.
+**Docs:** https://vercel.com/docs/connect.md
+**Announcement:** https://x.com/vercel/status/2092295314988568985
+
 
 ## 2026-08-19 — Vercel for Slack
 **What it is:** Vercel Agent now works inside Slack. Mention @Vercel in any channel, thread, or DM and it reads the conversation, answers with the full production context of your apps (deployments, logs, metrics, PRs), and turns team decisions into changes you approve. It can diagnose incidents, review PRs, create PRs, roll back deploys, update configs, and manage feature flags. Available today in Public Beta for Pro and Enterprise teams.
