@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2092295314988568985"} -->
+<!-- state:{"last_tweet_id":"2092332085449224511"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-08-25 — Run SDK
+**What it is:** A package for executing untrusted JavaScript and TypeScript in a hardened QuickJS sandbox inside a worker thread, isolated from Node.js, the network, and your application's secrets.
+**Why you'd use it:** Let coding agents run generated programs safely by exposing only approved host functions, interrupting execution for human-in-the-loop approval or auth, then resuming without re-running completed work. Install with `pnpm add run` (requires Node.js 22.13+ or Bun).
+**Docs:** https://vercel.com/blog/introducing-run
+**Announcement:** https://x.com/vercel/status/2092332085449224511
+
 
 ## 2026-08-25 — Vercel Connect (GA)
 **What it is:** A platform capability that lets your apps and agents request short-lived, scoped access tokens to 100+ services (Slack, GitHub, Linear, Salesforce, Notion, Shopify, Snowflake, plus custom OAuth and any OAuth-capable MCP server) at runtime, instead of storing long-lived provider secrets. Code calls `getToken()` from `@vercel/connect`, authenticated via the deployment's built-in OIDC identity; tokens are scoped per request, refresh automatically, and can be revoked with one command. GA adds fine-grained RBAC over connector management, audit logs, and token/trigger observability. Triggers also forward verified inbound events from providers into your project, even with Deployment Protection enabled.
