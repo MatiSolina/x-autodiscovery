@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2092332085449224511"} -->
+<!-- state:{"last_tweet_id":"2092999180780556643"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-08-27 — vgpu (Open-Source Agent-First WebGPU Library)
+**What it is:** vgpu is an open-source WebGPU library from Vercel (github.com/vercel-labs/vgpu, `vgpu` on npm) offering one small, composable API for rendering to browser canvases, headless Node.js, and serverless runtimes. It ships a CLI, a hosted read-only MCP server, and reusable .wgsl modules.
+**Why you'd use it:** To author, render, and test GPU shaders/WGSL from agents or CI — including headless CPU-sandbox rendering — with a single API across browser and serverless, and an MCP server agents can connect to directly to discover and copy examples.
+**Docs:** https://vgpu.sh/docs
+**Announcement:** https://x.com/vercel/status/2092999180780556643
+
 
 ## 2026-08-25 — Run SDK
 **What it is:** A package for executing untrusted JavaScript and TypeScript in a hardened QuickJS sandbox inside a worker thread, isolated from Node.js, the network, and your application's secrets.
