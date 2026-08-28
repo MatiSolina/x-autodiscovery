@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2092999180780556643"} -->
+<!-- state:{"last_tweet_id":"2093364921073549667"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-08-28 — Build and deploy eve agents from the Vercel dashboard
+**What it is:** A dashboard builder (vercel.com/new/agent) that scaffolds an eve agent from a prompt, pushes the generated code to a Git repo you own, and creates a Vercel project wired to AI Gateway models, web chat or Slack, and MCP connections.
+**Why you'd use it:** To go from an agent idea to a deployed, chat-ready production agent in minutes without hand-scaffolding code, wiring models, or configuring MCP connections yourself.
+**Docs:** https://vercel.com/changelog
+**Announcement:** https://x.com/vercel/status/2093364921073549667
+
 
 ## 2026-08-27 — vgpu (Open-Source Agent-First WebGPU Library)
 **What it is:** vgpu is an open-source WebGPU library from Vercel (github.com/vercel-labs/vgpu, `vgpu` on npm) offering one small, composable API for rendering to browser canvases, headless Node.js, and serverless runtimes. It ships a CLI, a hosted read-only MCP server, and reusable .wgsl modules.
