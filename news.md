@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2094539714984550471"} -->
+<!-- state:{"last_tweet_id":"2094823251528855686"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-09-01 — Fluid Compute
+**What it is:** A unified compute architecture that assembles the right machine for any workload — builds, functions, or sandboxes — and reshapes it on demand. It is built on three components: Hive (the provisioning layer that spins up isolated VMs in milliseconds), Fluid images (bring-your-own OS images, pushed to the Vercel Container Registry and converted to an optimized boot format called VHS), and Vercel Drives (portable, durable storage that travels with a workload instead of being tied to one machine). Builds and sandboxes already run on it; functions now run on it too.
+**Why you'd use it:** Instead of choosing a separate compute primitive per job, you describe the work and the machine forms around it. Push your own container image and boot a custom environment in milliseconds, keep filesystem state across sessions via Drives, and pay only for active CPU while code is working. Improvements to boot time, isolation, scheduling, and caching land across functions, sandboxes, and builds at once.
+**Docs:** https://vercel.com/blog/fluid-compute-takes-any-shape
+**Announcement:** https://x.com/vercel/status/2094823251528855686
+
 
 ## 2026-08-28 — Build and deploy eve agents from the Vercel dashboard
 **What it is:** A dashboard builder (vercel.com/new/agent) that scaffolds an eve agent from a prompt, pushes the generated code to a Git repo you own, and creates a Vercel project wired to AI Gateway models, web chat or Slack, and MCP connections.
