@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2094823251528855686"} -->
+<!-- state:{"last_tweet_id":"2097383256463385082"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-09-08 — Flat Rate CDN
+**What it is:** A new CDN billing model for Vercel Pro teams that replaces usage-based billing with a fixed monthly fee covering CDN Requests, Fast Data Transfer, Blob Data Transfer, and observability events from CDN requests. Tiers range from 1M requests / 1 TB transfer (included with Pro) up to 150M requests / 50 TB transfer ($300/mo), with automatic spike protection that absorbs temporary traffic surges without overages or performance degradation.
+**Why you'd use it:** It makes CDN costs predictable so viral launches, traffic bursts, or misconfigured routes can't trigger surprise bills. All projects on a team are covered under one team-level plan, and Vercel right-sizes your tier monthly based on sustained usage rather than penalizing spikes, so you can adopt caching strategies like Cache Components without worrying about cost impact.
+**Docs:** https://vercel.com/blog/introducing-flat-rate-cdn
+**Announcement:** https://x.com/vercel/status/2097383256463385082
+
 
 ## 2026-09-01 — Fluid Compute
 **What it is:** A unified compute architecture that assembles the right machine for any workload — builds, functions, or sandboxes — and reshapes it on demand. It is built on three components: Hive (the provisioning layer that spins up isolated VMs in milliseconds), Fluid images (bring-your-own OS images, pushed to the Vercel Container Registry and converted to an optimized boot format called VHS), and Vercel Drives (portable, durable storage that travels with a workload instead of being tied to one machine). Builds and sandboxes already run on it; functions now run on it too.
