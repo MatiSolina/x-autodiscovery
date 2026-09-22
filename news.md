@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2101078089669423378"} -->
+<!-- state:{"last_tweet_id":"2102176023207166256"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-09-21 — Grok 4.7 on AI Gateway
+**What it is:** Grok 4.7 from xAI is now available on Vercel AI Gateway under the model ID `spacexai/grok-4.7`, with a 500K-token context window, four reasoning levels (low/medium/high/xhigh), and Zero Data Retention support.
+**Why you'd use it:** One model ID works across the AI SDK, the OpenAI-compatible Chat Completions API, and coding agents (fx, Cursor, Codex, Amp), with usage, budgets, retries/failover, and routing tracked in AI Gateway at provider pricing with no platform markup.
+**Docs:** https://vercel.com/changelog/grok-4-7-now-available-and-40-off-on-ai-gateway-fx-eve
+**Announcement:** https://x.com/vercel/status/2102176023207166256
+
 
 ## 2026-09-08 — Flat Rate CDN
 **What it is:** A new CDN billing model for Vercel Pro teams that replaces usage-based billing with a fixed monthly fee covering CDN Requests, Fast Data Transfer, Blob Data Transfer, and observability events from CDN requests. Tiers range from 1M requests / 1 TB transfer (included with Pro) up to 150M requests / 50 TB transfer ($300/mo), with automatic spike protection that absorbs temporary traffic surges without overages or performance degradation.
