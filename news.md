@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2106094197468205371"} -->
+<!-- state:{"last_tweet_id":"2106139101422567748"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-10-02 — Jev in the AI SDK for Python
+**What it is:** The AI SDK for Python now ships an experimental `evaluate()` API (`ai.ops.experimental.evaluate`) that talks to Jev, a new classifier-style AI model reachable through Vercel's AI Gateway via `ai.get_model("typesafe-ai/jev")`. You pass state plus a set of multiple-choice questions — `ChoiceQuestion`, `ScoreQuestion`, or `NoulQuestion` — and get back structured, typed answers with confidence scores.
+**Why you'd use it:** For fast, narrow decisions (text classification, scoring inputs, estimating statement probabilities) where you want cheap, structured JSON output instead of free-form LLM generation. Install with `uv add ai` and set `AI_GATEWAY_API_KEY` to start.
+**Docs:** https://vercel.com/blog/jev-for-python-engineers
+**Announcement:** https://x.com/vercel/status/2106139101422567748
+
 
 ## 2026-09-21 — Grok 4.7 on AI Gateway
 **What it is:** Grok 4.7 from xAI is now available on Vercel AI Gateway under the model ID `spacexai/grok-4.7`, with a 500K-token context window, four reasoning levels (low/medium/high/xhigh), and Zero Data Retention support.
