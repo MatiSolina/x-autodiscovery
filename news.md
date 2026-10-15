@@ -1,7 +1,32 @@
-<!-- state:{"last_tweet_id":"2110777476972761512"} -->
+<!-- state:{"last_tweet_id":"2110790975203516766"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-10-15 — Bring Your Own Cloud (BYOC) on AWS
+**What it is:** Run Node.js and Python Vercel Functions inside your own AWS account, keeping function code and execution within your security and compliance boundary. Vercel continues to handle deployments, environments, routing, and static assets; function execution uses your own IAM permissions, network access, and resource lifecycle policies.
+**Why you'd use it:** Meet strict compliance, security, and isolation requirements by running compute privately within your VPC, connecting directly to backends and services there, and leveraging existing AWS commitments — all while keeping the Vercel developer experience.
+**Docs:** https://vercel.com/changelog/bring-your-own-cloud-on-aws-is-now-generally-available
+**Announcement:** https://x.com/vercel/status/2110790975203516766
+
+## 2026-10-15 — Vercel for Enterprise (Enterprise Apps and Agents)
+**What it is:** A central control plane for governing every builder, app, agent, token, and dollar across engineering and citizen developers, managed through your existing IdP. Covers deployment governance (Managed Users, RBAC), access governance (Vercel Passport, Deployment Protection, Firewall), integration/data governance (Vercel Connect with Enterprise-Managed Authorization, now in public beta), and model/token governance (AI Gateway with US-only inference and budget controls).
+**Why you'd use it:** Let anyone in your company build and deploy safely with consistent policies — scoped integrations, expiring tokens, per-project budgets, private-by-default deployments, and centralized observability/security monitoring — without giving up control over access, data, or spend.
+**Docs:** https://vercel.com/blog/vercel-for-enterprise
+**Announcement:** https://x.com/vercel/status/2110790963300045063
+
+## 2026-10-15 — Vercel Drives: persistent storage for agents
+**What it is:** Generally available persistent storage for Vercel Sandbox that decouples an agent's files from its execution environment. Create a drive once and mount it into any sandbox via CLI or the Sandbox SDK; agents can resume work in a new sandbox or switch runtimes without transferring their workspace, share read-only copies across sandboxes, and fork a drive to explore different approaches independently.
+**Why you'd use it:** Run stateful agents that persist files (e.g., cloned repos, datasets) across runs and environments, or have multiple agents share prepared data as input without rebuilding it each time.
+**Docs:** https://vercel.com/blog/introducing-vercel-drives-persistent-storage-for-agents
+**Announcement:** https://x.com/vercel/status/2110788459803938944
+
+## 2026-10-15 — Backends on Vercel: Python GA, Containers, and Daemons
+**What it is:** Three backend expansions: Python on Vercel is now generally available (FastAPI, Flask, Django on standard CPython with PyPI dependencies and framework auto-detection); the Vercel container runtime is generally available for deploying apps in any language with OS libraries/executables as Vercel Functions on Fluid compute with Active CPU pricing; and Vercel Daemons enters Public Beta for continuously running containerized background workers that pull work from queues or databases and stay running between jobs.
+**Why you'd use it:** Deploy your entire backend (not just the frontend) on Vercel using the language, dependencies, and execution pattern it needs — including long-running workers and custom runtimes — with the same local dev, previews, and production deployment experience.
+**Docs:** https://vercel.com/blog/backends-on-vercel-python-containers-and-daemons
+**Announcement:** https://x.com/vercel/status/2110786348131258456
+
 
 ## 2026-10-02 — Jev in the AI SDK for Python
 **What it is:** The AI SDK for Python now ships an experimental `evaluate()` API (`ai.ops.experimental.evaluate`) that talks to Jev, a new classifier-style AI model reachable through Vercel's AI Gateway via `ai.get_model("typesafe-ai/jev")`. You pass state plus a set of multiple-choice questions — `ChoiceQuestion`, `ScoreQuestion`, or `NoulQuestion` — and get back structured, typed answers with confidence scores.
