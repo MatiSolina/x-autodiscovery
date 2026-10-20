@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2112204091216847249"} -->
+<!-- state:{"last_tweet_id":"2112653833382027729"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-10-20 — durable-harness
+**What it is:** `durable-harness` is a new open-source package of adapters from Vercel that makes agent harnesses durable. It wraps existing harnesses — Pi, OpenCode, Codex, and Claude Code, plus any custom harness — with the same durability machinery (the Workflow SDK `World` interface) that powers Vercel's own `eve` and `fx`. It logs every model and tool call in a turn and backs the turn with a queue message, so when a function dies or its connection drops, a new function reads the log and resumes exactly where it left off without repeating finished calls (you're never billed twice for a completed model call's tokens) or re-running `never`-replay tools like refunds. It runs on Vercel, self-hosted on Postgres/MongoDB/Redis/Turso, or on local files, and an agent moves between worlds with two env vars.
+**Why you'd use it:** It lets you run coding agent harnesses in the cloud around the clock without losing work to function timeouts or disconnects — close the laptop lid, and the session survives. You can self-host a harness on your own database without changing the harness code, bring durability to a local workflow, or build your own durable harness. Built-in file/shell tools can run in an in-memory `virtual()` workspace, a logged `sandbox()` backed by a Vercel Sandbox + Drive, or both, and durable typed JSON documents keep session state (plans, todos) consistent across crashes. Every session shows up in Vercel's Agent Runs tab, with resumed turns visible in the same trace.
+**Docs:** https://vercel.com/blog/making-every-harness-durable
+**Announcement:** https://x.com/vercel/status/2112653833382027729
+
 
 ## 2026-10-15 — Bring Your Own Cloud (BYOC) on AWS
 **What it is:** Run Node.js and Python Vercel Functions inside your own AWS account, keeping function code and execution within your security and compliance boundary. Vercel continues to handle deployments, environments, routing, and static assets; function execution uses your own IAM permissions, network access, and resource lifecycle policies.
