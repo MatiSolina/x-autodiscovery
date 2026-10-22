@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2112653833382027729"} -->
+<!-- state:{"last_tweet_id":"2113397272943976560"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-10-22 — OIDC UI and expanded OIDC support
+**What it is:** Vercel launched OIDC UI, a shadcn/ui component registry with a trust-policy configurator and server-side token verifier (provider forms for Vercel, GitHub, GitLab, Google, Bitbucket, AWS, Azure, and custom OIDC issuers), and is expanding OIDC support across the Vercel API and CLI so deployment workflows no longer need long-lived Vercel tokens.
+**Why you'd use it:** API providers can generate trust-policy forms and token verification code instead of building them from scratch, while Vercel deployments authenticate to services (Blob, AI Gateway, Sandbox, and AWS/GCP/Azure) with short-lived identity tokens instead of storing long-lived static secrets.
+**Docs:** https://vercel.com/blog/death-to-long-lived-static-credentials
+**Announcement:** https://x.com/vercel/status/2113397272943976560
+
 
 ## 2026-10-20 — durable-harness
 **What it is:** `durable-harness` is a new open-source package of adapters from Vercel that makes agent harnesses durable. It wraps existing harnesses — Pi, OpenCode, Codex, and Claude Code, plus any custom harness — with the same durability machinery (the Workflow SDK `World` interface) that powers Vercel's own `eve` and `fx`. It logs every model and tool call in a turn and backs the turn with a queue message, so when a function dies or its connection drops, a new function reads the log and resumes exactly where it left off without repeating finished calls (you're never billed twice for a completed model call's tokens) or re-running `never`-replay tools like refunds. It runs on Vercel, self-hosted on Postgres/MongoDB/Redis/Turso, or on local files, and an agent moves between worlds with two env vars.
