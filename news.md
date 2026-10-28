@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2115526935636021696"} -->
+<!-- state:{"last_tweet_id":"2115571121622073355"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-10-28 — AI Gateway Virtual Models
+**What it is:** Virtual Models are a new AI Gateway abstraction that bundles a model string and its configuration — provider routing, fallbacks, Zero Data Retention, tags, and provider options — under a single reusable `vmc/<slug>` ID. Apps and agents call that ID as their model string; the underlying model and settings are managed in AI Gateway.
+**Why you'd use it:** You can swap the model behind a virtual model ID (even across providers) without code changes or redeploys, give each agent task its own model and cost/reasoning profile, and centrally enforce governance settings (fallbacks, Zero Data Retention, provider allowlists) that override any conflicting values a caller sends. Works with the AI SDK, OpenAI/Anthropic-compatible APIs, coding agents via `vercel ai-gateway setup`, and every model type on AI Gateway.
+**Docs:** https://vercel.com/docs/ai-gateway/models-and-providers/virtual-models
+**Announcement:** https://x.com/vercel/status/2115571121622073355
+
 
 ## 2026-10-28 — Vercel CI
 **What it is:** A CI runner on Vercel that executes your Turborepo tasks (not just builds) on every push, using the Turborepo task graph to skip cached and unaffected work and spin up only the compute each check needs. In beta on all plans, with programmatic/agentic access via the Vercel CLI (`vercel ci`) and Vercel MCP.
