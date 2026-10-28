@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2113397272943976560"} -->
+<!-- state:{"last_tweet_id":"2115526936021696"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-10-28 — Vercel CI
+**What it is:** A CI runner on Vercel that executes your Turborepo tasks (not just builds) on every push, using the Turborepo task graph to skip cached and unaffected work and spin up only the compute each check needs. In beta on all plans, with programmatic/agentic access via the Vercel CLI (`vercel ci`) and Vercel MCP.
+**Why you'd use it:** It cuts `git push` to "CI passed" by 2–6× by running only affected tasks — most valuable when coding agents push frequently. If you already use Turborepo there's no separate CI config to write; just tag tasks with `"tags": ["ci"]` in `turbo.json` (requires Turborepo 2.11.7+ and Vercel CLI 64.3.1+).
+**Docs:** https://vercel.com/docs/ci
+**Announcement:** https://x.com/vercel/status/2115526935636021696
+
 
 ## 2026-10-22 — OIDC UI and expanded OIDC support
 **What it is:** Vercel launched OIDC UI, a shadcn/ui component registry with a trust-policy configurator and server-side token verifier (provider forms for Vercel, GitHub, GitLab, Google, Bitbucket, AWS, Azure, and custom OIDC issuers), and is expanding OIDC support across the Vercel API and CLI so deployment workflows no longer need long-lived Vercel tokens.
