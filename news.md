@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2115571121622073355"} -->
+<!-- state:{"last_tweet_id":"2116191302257946924"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-10-30 — Geist Serif
+**What it is:** A high-contrast display serif typeface added to the Geist font family (joining Sans, Mono, Pixel), drawn for headlines and large display sizes on high-density screens. It ships with a variable ELSH (Element Shape) axis that swaps every dot's shape across four variants — Regular, Square, Triangle, and Heart.
+**Why you'd use it:** Install it from the existing `geist` npm package and drop it into Next.js layouts via `import { GeistSerifRegular } from 'geist/font/serif/regular'`. It shares cap height and x-height with Geist Sans, so you can mix it into existing Geist layouts without reflow, and each variant has its own entry point so you only ship the file you use. Covers 352 Latin-script languages across 894 glyphs.
+**Docs:** https://vercel.com/blog/introducing-geist-serif
+**Announcement:** https://x.com/vercel/status/2116191302257946924
+
 
 ## 2026-10-28 — AI Gateway Virtual Models
 **What it is:** Virtual Models are a new AI Gateway abstraction that bundles a model string and its configuration — provider routing, fallbacks, Zero Data Retention, tags, and provider options — under a single reusable `vmc/<slug>` ID. Apps and agents call that ID as their model string; the underlying model and settings are managed in AI Gateway.
