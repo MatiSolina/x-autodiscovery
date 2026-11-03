@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"0"} -->
+<!-- state:{"last_tweet_id":"2117726156992753721"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-11-03 — Vercel Security Review
+**What it is:** A new Vercel Agent capability (public beta) that scans every push to connected GitHub repositories for vulnerabilities like missing authorization checks and exposed secrets, surfacing findings in the Security dashboard, PR comments, and the CLI.
+**Why you'd use it:** To catch logic-flaw vulnerabilities in every code change automatically and have Vercel Agent or your own coding agent open validated fixes without a separate manual review step.
+**Docs:** https://vercel.com/blog/vercel-security-review
+**Announcement:** https://x.com/vercel/status/2117726156992753721
+
 
 ## 2026-10-30 — Geist Serif
 **What it is:** A high-contrast display serif typeface added to the Geist font family (joining Sans, Mono, Pixel), drawn for headlines and large display sizes on high-density screens. It ships with a variable ELSH (Element Shape) axis that swaps every dot's shape across four variants — Regular, Square, Triangle, and Heart.
