@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2117726156992753721"} -->
+<!-- state:{"last_tweet_id":"2118438184594149784"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-11-05 — Vercel Schedules
+**What it is:** Vercel Schedules (now in Public Beta) lets agents and applications create, update, and cancel one-time and recurring scheduled tasks at runtime through the JS SDK, CLI, or API — without redeploying. It extends Vercel Cron Jobs with dynamic scheduling, supports targeting private functions or Queue topics, and can be tested in Preview deployments and custom environments before production.
+**Why you'd use it:** When a user or agent decides when work should happen while your app is running (e.g., "summarize the top Hacker News stories tomorrow morning"), you no longer need a separate database and polling cron job — your code creates a schedule that delivers the task to your app via Queues at the right time.
+**Docs:** https://vercel.com/blog/introducing-vercel-schedules
+**Announcement:** https://x.com/vercel/status/2118438184594149784
+
 
 ## 2026-11-03 — Vercel Security Review
 **What it is:** A new Vercel Agent capability (public beta) that scans every push to connected GitHub repositories for vulnerabilities like missing authorization checks and exposed secrets, surfacing findings in the Security dashboard, PR comments, and the CLI.
