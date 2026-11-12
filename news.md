@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2119870551175135426"} -->
+<!-- state:{"last_tweet_id":"2120950032014963054"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-11-12 — UI SDK
+**What it is:** A new open-source library from Vercel Labs (`vercel-labs/ui`, packages `@ui-sdk/core` plus `@ui-sdk/react`, `@ui-sdk/vue`, `@ui-sdk/svelte`, `@ui-sdk/solid`, and `@ui-sdk/web`) that provides composable "behaviors" — keyboard navigation, focus, selection, dismissal, popups, drag and drop, and the associated ARIA — for agents to build accessible UI components. Components are defined as framework-agnostic primitives that render identically across all five supported frameworks. It is currently in beta under the Vercel beta terms.
+**Why you'd use it:** It gives coding agents a headless, behavior-first building block set so the components they generate get complex interaction and accessibility patterns right by default, instead of hand-rolling ARIA and keyboard handling per framework. You can install the core and your framework adapter (`npm install @ui-sdk/react @ui-sdk/core`) and add the agent skill with `npx skills add vercel-labs/ui --skill ui-sdk`.
+**Docs:** https://ui-sdk.dev/docs
+**Announcement:** https://x.com/vercel/status/2120950032014963054
+
 
 ## 2026-11-05 — Vercel Schedules
 **What it is:** Vercel Schedules (now in Public Beta) lets agents and applications create, update, and cancel one-time and recurring scheduled tasks at runtime through the JS SDK, CLI, or API — without redeploying. It extends Vercel Cron Jobs with dynamic scheduling, supports targeting private functions or Queue topics, and can be tested in Preview deployments and custom environments before production.
