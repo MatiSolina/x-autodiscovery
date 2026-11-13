@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2120950032014963054"} -->
+<!-- state:{"last_tweet_id":"2121272480786731294"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-11-13 — Workflow SDK 5
+**What it is:** A major rewrite of Vercel's durable-workflows SDK, built for production agent loops and harnesses. v5 adds end-to-end AES-256-GCM payload encryption by default, regional workload isolation (every run has its own home region across all Vercel Function regions), in-flight cancellation via AbortController, searchable run attributes, WebSocket streaming by default, automatic payload compression, and a redesigned trace viewer with span search, zoom, and a minimap. Benchmarks show 1.6×–25× lower latency and overhead versus v4, with p75 step-to-step overhead dropping from 618 ms to 109 ms and 1,020-step runs completing in 3 min vs 21 min.
+**Why you'd use it:** It lets you write durable async JS/TS (`"use workflow"`, `"use step"`) that survives crashes and deployments, with the performance needed for long-running AI agent loops containing thousands of sequential events, tool chains, and high-throughput token streams. Encryption requires zero configuration on Vercel (keys are deployment-scoped), and regional runs keep state close to users without cross-region round trips on the hot path.
+**Docs:** https://vercel.com/blog/workflow-sdk-5
+**Announcement:** https://x.com/vercel/status/2121272480786731294
+
 
 ## 2026-11-12 — UI SDK
 **What it is:** A new open-source library from Vercel Labs (`vercel-labs/ui`, packages `@ui-sdk/core` plus `@ui-sdk/react`, `@ui-sdk/vue`, `@ui-sdk/svelte`, `@ui-sdk/solid`, and `@ui-sdk/web`) that provides composable "behaviors" — keyboard navigation, focus, selection, dismissal, popups, drag and drop, and the associated ARIA — for agents to build accessible UI components. Components are defined as framework-agnostic primitives that render identically across all five supported frameworks. It is currently in beta under the Vercel beta terms.
