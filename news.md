@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2122397118426181962"} -->
+<!-- state:{"last_tweet_id":"2122457887369044452"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-11-16 — AI Gateway Private Inference
+**What it is:** Private Inference lets you connect your own model endpoints (fine-tuned, self-hosted, or prerelease models) to Vercel AI Gateway, exposing them as `private/<slug>` model IDs callable through the same Chat Completions, Responses, or Messages APIs as catalog models.
+**Why you'd use it:** Every model your team uses — public catalog and private — runs through one API key, one SDK, one set of logs and observability, with optional fallback to a catalog model if your private endpoint fails. Private models are scoped to your Vercel team, credentials are stored encrypted, and Zero Data Retention can be enabled per provider. Usable from coding agents (Claude Code, Codex, Cursor) and the Vercel CLI (`vercel ai-gateway private-inference providers create`, v65.16.0+).
+**Docs:** https://vercel.com/changelog/ai-gateway-now-supports-private-inference
+**Announcement:** https://x.com/vercel/status/2122457875364864347
+
 
 ## 2026-11-13 — Workflow SDK 5
 **What it is:** A major rewrite of Vercel's durable-workflows SDK, built for production agent loops and harnesses. v5 adds end-to-end AES-256-GCM payload encryption by default, regional workload isolation (every run has its own home region across all Vercel Function regions), in-flight cancellation via AbortController, searchable run attributes, WebSocket streaming by default, automatic payload compression, and a redesigned trace viewer with span search, zoom, and a minimap. Benchmarks show 1.6×–25× lower latency and overhead versus v4, with p75 step-to-step overhead dropping from 618 ms to 109 ms and 1,020-step runs completing in 3 min vs 21 min.
