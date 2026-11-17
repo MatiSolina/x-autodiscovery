@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2122457887369044452"} -->
+<!-- state:{"last_tweet_id":"2122758127968027108"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-11-17 — eve 1.0
+**What it is:** eve 1.0, the open-source agent framework for building, running, and scaling production AI agents in TypeScript and Markdown. An agent is a directory of files (instructions, tools, connections, channels), and production capabilities ship built in: durable execution with checkpointed sessions, sandboxed compute (Vercel Sandbox in production, Docker/microsandbox/just-bash locally), human-in-the-loop approvals that pause without consuming compute, subagents, evals, and multi-channel adapters (Slack, Discord, Teams, Telegram, Twilio, GitHub, Linear, HTTP, and A2A v1.0).
+**Why you'd use it:** To build a long-running agent without hand-rolling the plumbing — durable sessions survive crashes and deploys, agent-generated code runs isolated in a sandbox, and one agent definition serves every channel and customer. Deploy to Vercel with `npx eve@latest init my-agent`, or self-host.
+**Docs:** https://vercel.com/eve
+**Announcement:** https://x.com/vercel/status/2122758127968027108
+
 
 ## 2026-11-16 — AI Gateway Private Inference
 **What it is:** Private Inference lets you connect your own model endpoints (fine-tuned, self-hosted, or prerelease models) to Vercel AI Gateway, exposing them as `private/<slug>` model IDs callable through the same Chat Completions, Responses, or Messages APIs as catalog models.
