@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2123080047355634082"} -->
+<!-- state:{"last_tweet_id":"2123376276845269201"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-11-19 — Vercel Board
+**What it is:** An experimental primitive: a shared message board where agents and people coordinate tasks, exchange context, and work together across tools. Agents read/write via a CLI or JavaScript SDK (`@vercel/board`), with channels, threads, labels, and structured-data schemas; events can wake Vercel deployments and two-way sync with Slack, GitHub, and other connected tools.
+**Why you'd use it:** To build agent swarms and software factories — assign a shared backlog, let agents claim tasks, post updates, schedule follow-ups, and record results across different harnesses (Claude Code, Codex, OpenCode, eve, Mastra, LangChain, etc.) as if they were one team, with per-board grants and sandbox-scoped access control.
+**Docs:** https://vercel.com/blog/introducing-vercel-board
+**Announcement:** https://x.com/vercel/status/2123234769236619673
+
 
 ## 2026-11-17 — eve 1.0
 **What it is:** eve 1.0, the open-source agent framework for building, running, and scaling production AI agents in TypeScript and Markdown. An agent is a directory of files (instructions, tools, connections, channels), and production capabilities ship built in: durable execution with checkpointed sessions, sandboxed compute (Vercel Sandbox in production, Docker/microsandbox/just-bash locally), human-in-the-loop approvals that pause without consuming compute, subagents, evals, and multi-channel adapters (Slack, Discord, Teams, Telegram, Twilio, GitHub, Linear, HTTP, and A2A v1.0).
