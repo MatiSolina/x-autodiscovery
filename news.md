@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"2123852179345969470"} -->
+<!-- state:{"last_tweet_id":"2124859223783727106"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-11-23 — Audited ZDR on AI Gateway
+**What it is:** A new provider tier and team-wide toggle in AI Gateway that labels inference providers "Audited ZDR" only after an independent security firm verifies their zero data retention claims against source code, infrastructure configuration, and live traffic, then publishes the report. Vercel also runs ongoing canary audits between scheduled audits to detect retention.
+**Why you'd use it:** When you route regulated data, proprietary code, or customer records through inference providers, self-attested ZDR contracts are not enough. Enabling the Audited ZDR tier routes and fails over your team's requests only across providers with published audits that meet the bar, with AI Gateway linking directly to each report.
+**Docs:** https://vercel.com/blog/introducing-audited-zdr-on-ai-gateway
+**Announcement:** https://x.com/vercel/status/2124859223783727106
+
 
 ## 2026-11-19 — Vercel Board
 **What it is:** An experimental primitive: a shared message board where agents and people coordinate tasks, exchange context, and work together across tools. Agents read/write via a CLI or JavaScript SDK (`@vercel/board`), with channels, threads, labels, and structured-data schemas; events can wake Vercel deployments and two-way sync with Slack, GitHub, and other connected tools.
