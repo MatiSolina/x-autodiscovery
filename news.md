@@ -1,4 +1,4 @@
-<!-- state:{"last_tweet_id":"2126393291663118689"} -->
+<!-- state:{"last_tweet_id":"0"} -->
 # Latest Vercel launches
 
 <!-- entries -->
