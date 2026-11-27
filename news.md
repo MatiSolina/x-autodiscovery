@@ -1,7 +1,14 @@
-<!-- state:{"last_tweet_id":"0"} -->
+<!-- state:{"last_tweet_id":"2126393291663118689"} -->
 # Latest Vercel launches
 
 <!-- entries -->
+
+## 2026-11-12 — UI SDK
+**What it is:** A new open-source library from Vercel Labs (`vercel-labs/ui`) providing a set of behaviors for agents to build and drive the next generation of user interfaces.
+**Why you'd use it:** When building agentic apps, the UI itself needs to be dynamically constructed and driven by the agent. The UI SDK gives agents the building blocks to generate and control UIs rather than just returning text.
+**Docs:** https://vercel.com/changelog
+**Announcement:** https://x.com/vercel/status/2120950020249895314
+
 
 ## 2026-11-23 — Audited ZDR on AI Gateway
 **What it is:** A new provider tier and team-wide toggle in AI Gateway that labels inference providers "Audited ZDR" only after an independent security firm verifies their zero data retention claims against source code, infrastructure configuration, and live traffic, then publishes the report. Vercel also runs ongoing canary audits between scheduled audits to detect retention.
